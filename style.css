@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+p, a {
+    font-family: 'Gentium Basic', serif;}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/**********************************************************start slider ***********************************************/
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url('image/slider-01.jpg');
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+header .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 100;
+}
+nav {
+padding: 10px;
+width: 100%;
+height: 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: absolute;
+top:0;
+left: 0;
+right: 0;
+z-index: 200;
+}
+nav .foker {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+nav .foker h2 {
+    font-size: 23px;
+    color: rgb(253, 10, 91);
+}
+nav .list {
+    width: 50%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+nav .list ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav .list ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+nav .list ul li .home {
+    color: rgb(255, 6, 88);
+}
+nav .list ul li a:hover {
+    color: rgb(255, 6, 88);
+    transition: all .7s ease-in-out;
+}
+header .center {
+    position: absolute;
+    top: 42%;
+    left: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+header .center h2 {
+    font-size: 27px;
+    color: #fff
+}
+header .center h1 {
+    font-size: 59px;
+    color: rgb(252, 6, 88);
+    text-transform: uppercase;
+}
+header .center p {
+    color: #eee;
+    font-size: 25px;
+    border-right: 2px solid #eee;
+    padding-right: 10px;
+}
+/******************************** end slider ********************************/
+
+/******************************** start about *******************************/
+.about {
+    width: 90%;
+   margin: 10% auto;
+    display: flex;
+    justify-content: space-between;
+    padding : 0 100px;
+}
+.about .image{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    border: 10px solid #000;
+    margin-right: 5%;
+}
+.about .image img {
+    position: absolute;
+    margin-right: 5%;
+    top: 8%;
+    left: 10%;
+}
+.about .text {
+    width: 60%;
+}
+.about .text h3 {
+    font-size: 26px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+}
+.about .text h3 span {
+    color: rgb(252, 6, 88);
+}
+.about .text p {
+    width: 79%;
+    color: #666;
+    font-size: 20px;
+    border-bottom: 1px black dashed;
+    padding-bottom: 4% ;
+}
+.about .text .info {
+    display: flex;
+    margin-top: 4%;
+}
+.about .text .info h3 {
+    font-size: 18px;
+    color: #444;
+    text-transform: capitalize;
+}
+.about .text .info span{
+    color: #000
+}
+.about .text .info .info-1,
+.about .text .info .info-2 {
+    width: 40%;
+}
+.about .text .info .info-2  {
+    margin-right: 0%;
+}
+.about .text .buttons {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    margin-top: 3%
+}
+.about .text .buttons button {
+    padding: 10px 12px;
+    color: #fff;
+    background-color: rgb(252, 6, 88);
+    border:none;
+    border-radius: 3%;
+    font-size : 20px;
+    margin-right: 4%;
+    text-transform: capitalize;
+}
+.about .text .buttons button i {
+    margin-left: 10px
+}
+
+/******************************** end about *********************************/
+
+/******************************* start Our Services *************************/
+.service {
+   width: 100%;
+   margin: 10% auto;
+   background-color: #ddd;
+   padding: 70px 100px ;
+}
+.service .part-1 {
+    text-align: center;
+}
+.service .part-1 h4 {
+    font-size: 40px;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+}
+.service .part-1 .line {
+    width: 200px;
+    height: 2;
+    background-color: rgb(248, 99, 31);
+    position: relative;
+    top: -40px;
+    left: 43%;
+
+}
+.line::before {
+    content: "";
+    height: 2px;
+    background-color: rgb(248, 99, 31);
+    position: absolute;
+    bottom: 570%;
+    width: 150px;
+    left: 30px;
+}
+.line::after {
+    content: "";
+    height: 2px;
+    background-color: rgb(248, 99, 31);
+    position: absolute;
+    width: 150px;
+    left: 30px;
+    top: 590%;
+}
+.service .cards {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 10px;
+}
+.service .cards .card {
+    text-align: center;
+    padding: 5px;
+}
+.service .cards .card:hover {
+    background-color: #FFF;
+    border-radius: 5px;
+    transition: all .7s ease-in-out;
+}
+.service .cards .card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+.service .cards .card h4 {
+ font-size: 30px;
+ color: #333;
+ margin-bottom: 18px;
+ text-transform: uppercase;
+}
+.service .cards .card p {
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+/******************************* end Our Services ***************************/
+
+/******************************* start Portfolil *****************************/
+.Portfolio {
+    width: 100%;
+    margin-bottom: 100px;
+}
+.Portfolio .part-1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.Portfolio .part-1 h4 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #333;
+}
+.Portfolio .part-1 .line {
+    background-color: rgb(248, 99, 31);
+    position: relative;
+    width: 220px;
+    height: 2px;
+    top: 30px;
+    left: 43%;
+  }
+  .Portfolio .part-1 .line::before {
+    content: "";
+    height: 2px;
+    background-color: rgb(248, 99, 31);
+    position: absolute;
+    bottom: 600%;
+    left: 30px;
+    width: 150px;
+  }
+  .Portfolio .part-1 .line::after {
+    content: "";
+    height: 2px;
+    background-color: rgb(248, 99, 31);
+    position: absolute;
+    top: 600%;
+    left: 30px;
+  }
+  .Portfolio .part-2 {
+      margin-bottom: 4%;
+  }
+  .Portfolio .part-2 ul {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      list-style: none;
+  }
+  .Portfolio .part-2 ul li {
+      text-transform: uppercase;
+      margin-right: 3%;
+      font-size: 20px;
+  }
+  .Portfolio .part-2 ul li:hover {
+      color: rgb(252, 6, 88);
+      transition: all .4s ease-in-out;
+  }
+.Portfolio .part-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3%;
+    grid-row-gap: 5%;
+    padding: 0px 200px;
+    margin-bottom: 100px;
+}
+.Portfolio .part-3 img {
+    width: 100%;
+    box-shadow: 2px 2px 4px #eee;
+}
+.Portfolio .extra {
+    width: 100%;
+    background-color: #eee;
+}
+.Portfolio .part-4 {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    padding:90px 300px;
+  
+}
+.Portfolio .part-4 .divs {
+    text-align: center;
+}
+.Portfolio .part-4 .divs i {
+    font-size: 32px;
+    color: rgb(253, 10, 91);
+    margin-bottom: 7%;
+}
+.Portfolio .part-4 .divs h3 {
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+.Portfolio .part-4 .divs p{
+    color: #222;
+    font-weight: 600;
+}
+/******************************* end Portfolio  *******************************/
+
+/****************************** start testimonial *****************************/
+.testimonial {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 50px 300px;
+}
+.testimonial .part-1 {
+    text-align: center;
+    margin-bottom: 10%;
+}
+.testimonial .part-1 h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color:#222;
+    margin-bottom: 1%;
+}
+.testimonial .part-1 .line {
+    background-color: rgb(248, 99, 31);
+    position: relative;
+    text-align: center;
+    width: 250px;
+    height: 2px;
+    top: 30px;
+    left: 34%;
+  }
+  .testimonial .part-1 .line::before {
+    content: "";
+    height: 2px;
+    background-color: rgb(248, 99, 31);
+    position: absolute;
+    bottom: 600%;
+    left: 40px;
+    width: 160px;
+  }
+  .testimonial .part-1 .line::after {
+    content: "";
+    height: 2px;
+    background-color: rgb(248, 99, 31);
+    position: absolute;
+    top: 600%;
+    left: 40px;
+    width: 160px;
+  }
+  .testimonial .part-2 {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-column-gap: 2%; 
+      background-color: #eeeeee;
+      padding: 50px 50px;
+      position: relative;
+  }
+  .testimonial .part-2::before {
+    content: " ";
+    background-color: rgb(253, 10, 91) !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 220px;
+    height: 200px;
+    z-index: 1;
+    clip-path: polygon(1% 1%, 0% 100%, 100% 0);
+}
+  
+  .testimonial .part-2 img {
+      border-radius: 50%; 
+      z-index: 4;
+  }
+  .testimonial .part-2 .text h3 {
+   font-size: 23px;
+   text-transform: capitalize;
+   color: #222;
+   margin-bottom: 2%;
+  }
+  .testimonial .part-2 .text span {
+      font-size: 20px;
+      color: #555;
+  }
+  .testimonial .part-2 .text p {
+      line-height: 1.5;
+      margin-bottom: 2%;
+      margin-top: 1%;
+  }
+  .testimonial .part-2 .text i {
+      color: rgba(230, 171, 9, 0.936);
+      font-size: 20px;
+  }
+  
+  .pass-divs {
+      display: flex;
+      justify-content: center;  
+      margin-top: 3%;
+      text-align: center;
+  }
+  .pass-divs .div-1 {
+      width: 40px;
+      height: 10px;  
+      border: 1px solid rgb(253, 10, 91);
+      border-radius: 4px;
+      margin-right: 10px;
+      background-color: rgb(253, 10, 91);
+  }
+  .pass-divs .div-1:hover,
+  .pass-divs .div-2:hover {
+      background-color: rgb(253, 10, 91);
+      border: none;
+      transition: all .6s ease-in-out;
+  }
+  .pass-divs .div-2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(253, 10, 91);
+  }
+/****************************** end testimonial  ******************************/
+
+/****************************** start our blog ********************************/
+.blog {
+    width: 100%;
+    background-color: #eee;
+    margin-top: 3%;
+    padding-bottom: 70px
+}
+.blog .part-1 {
+    text-align: center;
+    margin-bottom: 4%;
+    padding-top: 46px;
+}
+.blog .part-1 .line {
+    background-color: rgb(248, 99, 31);
+    position: relative;
+    width: 180px;
+    height: 2px;
+    top: 30px;
+    left: 44%;
+  }
+  .blog .part-1 .line::before {
+    content: "";
+    height: 2px;
+    background-color: rgb(248, 99, 31);
+    position: absolute;
+    bottom: 600%;
+    left: 35px;
+    width: 120px;
+  }
+  .blog .part-1 .line::after {
+    content: "";
+    height: 2px;
+    background-color: rgb(248, 99, 31);
+    position: absolute;
+    top: 600%;
+    left: 35px;
+    width: 120px;
+  }
+.blog .part-1 h2 {
+    font-size: 40px;
+    color: #222;
+    text-transform: capitalize;
+}
+.blog .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4%;
+    padding: 0px 150px
+}
+.blog .cards .card {
+    box-shadow: 2px 2px 4px #aaa;
+}
+.blog .cards .card .padd {
+    padding: 10px 10px;
+    background-color: #FFF;
+}
+.blog .cards .card img,
+.blog .cards .card iframe {
+    width: 100%;
+    height: 250px;
+}
+.blog .cards .card span {
+    color: #999;
+    font-weight: 300;
+    font-size: 19px;
+}
+.blog .cards .card h2 {
+    color: #444;
+    margin-bottom: 4%;
+    margin-top: 4%
+}
+.blog .cards .card h2:hover{
+    color: rgb(253, 10, 91);
+    transition: all .5s ease-in-out;
+}
+.blog .cards .card p {
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
+.blog .cards .card a {
+    text-decoration: none;
+    color: rgb(211, 28, 135);
+    text-transform: uppercase;
+    margin-right: 3%;
+    font-weight: 800;
+}
+/****************************** end  our blog *********************************/
+
+/****************************** start contact us ******************************/
+.contact{
+    width: 90%;
+    margin: 100px auto;
+}
+.contact .part-1 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.contact .part-1 .line {
+    background-color: rgb(248, 99, 31);
+    position: relative;
+    width: 180px;
+    height: 2px;
+    top: 30px;
+    left: 44%;
+  }
+  .contact .part-1 .line::before {
+    content: "";
+    height: 2px;
+    background-color: rgb(248, 99, 31);
+    position: absolute;
+    bottom: 600%;
+    left: 35px;
+    width: 120px;
+  }
+  .contact .part-1 .line::after {
+    content: "";
+    height: 2px;
+    background-color: rgb(248, 99, 31);
+    position: absolute;
+    top: 600%;
+    left: 35px;
+    width: 120px;
+  }
+.contact .part-1 h2 {
+    font-size: 40px;
+    color: #222;
+    text-transform: capitalize;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+}
+.contact form input{
+width: 48%;
+height: 40px;
+padding: 8px 10px;
+font-size: 17px;
+margin: 2% auto;
+outline: none;
+border: .5px solid #aaa;
+border-radius: 3%;
+box-shadow: 1px 1px 4px #aaa;
+}
+.contact form input:first-of-type {
+    margin-right:3%
+}
+.contact form input:nth-of-type(3),
+.contact form textarea {
+    width: 100%;
+}
+.contact form textarea {
+    padding: 8px 10px;
+    font-size: 17px;
+    margin: 2% auto;
+    text-transform: capitalize;
+    height: 100px;
+    border: 1px solid #aaa;
+    border-radius: 2%;
+    box-shadow: 1px 1px 4px #aaa;
+}
+.contact form button{
+    padding: 10px;
+    background-color: rgb(252, 6, 88);
+    width: 24%;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    border-radius: 4%;
+    letter-spacing: 1px;
+}
+
+/****************************** end contact us ********************************/
+
+/***************************** start footer **********************************/
+footer{
+    width: 100%;
+    background-color: #222;
+    padding: 60px 0;
+}
+footer .icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+footer .icons i {
+    color: #fff;
+    margin-right: 3%;
+    font-size: 24px;
+}
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    color: #eee;
+    font-size: 18px;
+}
+footer .copyright h3 {
+    letter-spacing: 2px;
+}
+footer .copyright h3 span {
+    color: rgb(253, 10, 91);
+}
+/**************************** end footer *************************************/
